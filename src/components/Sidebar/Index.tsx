@@ -1,14 +1,16 @@
 
 import Gmail from "@/assets/icons/Gmail";
 import Linkedin from "@/assets/icons/Linkedin";
+import Image from 'next/image';
 import LinkedinBlack from "@/assets/icons/LinkedinBlack";
-import Github from "@/assets/icons/github";
+// import Github from "@/assets/icons/github";
+import Github from "@/assets/icons/github-mark-white.png"
 
 export default function Sidebar() {
     return (
-        <div className="flex flex-col justify-center items-center pt-40 gap-6">
+        <div className="flex flex-col  hidden md:flex justify-center items-center pt-40 gap-6">
             <div>
-                <Github />
+                <Image src={Github} width={30} height={30} alt="github logo"/>
             </div>
             <div>
                 <Gmail />

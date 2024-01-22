@@ -1,0 +1,18 @@
+
+  .photoContainer {
+    overflow: hidden;
+    border-radius:51% 49% 49% 51% / 32% 32% 68% 68%  ;
+    background: hsl(271, 45%, 46%);
+  }
+  
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto cubra todo o espaço do contêiner */
+    border-radius: 50%;
+    transition: transform 0.6s ease;
+
+}
+.photo:hover{
+      transform: scale(1.1); 
+  }
