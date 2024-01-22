@@ -2,7 +2,7 @@
   .photoContainer {
     overflow: hidden;
     border-radius:51% 49% 49% 51% / 32% 32% 68% 68%  ;
-    background: hsl(271, 45%, 46%);
+    background: #15426E;
   }
   
   .photo {
