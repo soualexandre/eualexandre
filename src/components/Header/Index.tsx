@@ -15,6 +15,10 @@ export default function Header() {
                     Projetos
                 </div>
             </div>
+
+            <div>
+                <div className="p-4 rounded-full bg-white"></div>
+            </div>
         </div>
     );
 }
