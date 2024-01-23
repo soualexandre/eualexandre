@@ -1,9 +1,13 @@
 "use client"
 import styles from './header.module.css';
 import { useState } from 'react';
-
+import { scrollTo } from '@/utils/scroolTo';
+import Link from 'next/link';
 export default function Header() {
 
+    const itemHeaderClick = (item: any) => {
+        scrollTo(item);
+    };
     const [border, useBorder] = useState("false");
 
     const handleBorder = (border: any) => {
@@ -17,9 +21,9 @@ export default function Header() {
                 <div className={`${styles.borderBottom}`}>
                     Início
                 </div>
-                <div className={`${styles.borderBottom}`}>
+                <a onClick={() => itemHeaderClick("sobre")} className={`${styles.borderBottom} cursor-pointer`}>
                     Sobre mim
-                </div>
+                </a>
                 <div className={`${styles.borderBottom}`}>
                     Projetos
                 </div>
