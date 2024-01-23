@@ -11,7 +11,6 @@
     object-fit: cover; /* Garante que a foto cubra todo o espaço do contêiner */
     border-radius: 50%;
     transition: transform 0.6s ease;
-
 }
 .photo:hover{
       transform: scale(1.1); 
