@@ -8,11 +8,6 @@ export default function Header() {
     const itemHeaderClick = (item: any) => {
         scrollTo(item);
     };
-    const [border, useBorder] = useState("false");
-
-    const handleBorder = (border: any) => {
-        useBorder(border!);
-    }
 
     return (
         <div className="my-4 flex text-white justify-between items-center w-full p-4">
