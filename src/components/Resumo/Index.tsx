@@ -5,7 +5,7 @@ import Profile from '@/assets/icons/alexandre.jpeg'
 export default function Resumo() {
     return (
         <div className="w-full mx-0 py-40 bg-gray-900" id="sobre">
-            <div className="mx-auto max-w-7xl flex gap-8">
+            <div className="flex sm:flex-col mx-auto max-w-7xl  gap-8">
                 <div className="py-10 border-spacing-1 rounded bg-zinc-200 w-1/5">
                     <Image src={Profile} alt="" />
                 </div>
