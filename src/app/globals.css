@@ -18,8 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #000000;
   font-size: 1rem;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,2,40,1) 35%, rgba(0,0,0,1) 100%);
 }
 
 @layer utilities {
