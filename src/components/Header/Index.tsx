@@ -1,8 +1,7 @@
 "use client"
 import styles from './header.module.css';
-import { useState } from 'react';
 import { scrollTo } from '@/utils/scroolTo';
-import Link from 'next/link';
+
 export default function Header() {
 
     const itemHeaderClick = (item: any) => {
