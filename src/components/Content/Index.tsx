@@ -10,8 +10,8 @@ export default function Content() {
             <div className="flex flex-col sm:flex-row my-2 md:my-2 lg:my-0">
                 <div className="flex justify-center items-center sm:hidden ">
                     <div className={`${styles.guitarPick}`}>
-                        <div className={styles.photoContainer}>
-                            <Image src={Profile} width={150} height={150} alt="Profile" className={styles.photo} />
+                    <div className={`${styles.photoContainer} relative bg-gray-100`} >
+                            <Image src={Profile} width={200} height={200} alt="Profile" className={`${styles.photoContainer} transition-transform transform-gpu hover:-translate-x-3 hover:-translate-y-2`} />
                         </div>
                     </div>
                 </div>
