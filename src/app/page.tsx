@@ -23,13 +23,15 @@ export default function Home() {
               <Content />
             </div>
           </div>
-          <a className="mx-auto h-screen lg:my-10 " onClick={() => itemHeaderClick("sobre")}>
-            <FaChevronDown className="text-2xl mx-auto transform transition-transform hover:scale-150" />
-          </a>
+          <div className="sm:pt-10 md:pt-40 lg:pt-40">
+            <a className="mx-auto pt-20" onClick={() => itemHeaderClick("sobre")}>
+              <FaChevronDown className="text-2xl text-white  mx-auto transform transition-transform hover:scale-150" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="w-full mx-0 py-10 bg-gray-900" id="sobre">
-        <div className="max-w-7xl mx-auto h-screen flex justify-center">
+        <div className="max-w-7xl mx-auto  flex justify-center">
           <Resumo />
         </div>
       </div>

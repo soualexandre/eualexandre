@@ -10,6 +10,9 @@
         display: flex;
         justify-content: center;
     }
+    .containerImageRight img{
+        display: none;
+    }
 
     .containerImage img {
         width: 300px;
@@ -30,6 +33,11 @@
         width: 600px;
     }
 
+    .containerImageRight img{
+        width: 300px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
     .containerImage img {
         width: 300px;
         margin-bottom: 40px;
