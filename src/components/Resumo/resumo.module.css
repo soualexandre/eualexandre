@@ -1,0 +1,39 @@
+@media (max-width: 820px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        text-align: center;
+    }
+    .containerImage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerImage img {
+        width: 300px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+}
+
+
+@media (min-width: 820px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .containerImage {
+        justify-content: start;
+        width: 600px;
+    }
+
+    .containerImage img {
+        width: 300px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+
+}

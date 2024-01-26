@@ -4,7 +4,6 @@ import styles from './profile.module.css';
 import ToolBar from "../ToolBar/ToolBar";
 
 export default function Content() {
- 
     return (
         <>
             <div className="flex flex-col sm:flex-row my-2 md:my-2 lg:my-0">

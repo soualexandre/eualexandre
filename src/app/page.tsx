@@ -11,7 +11,7 @@ import { scrollTo } from "@/utils/scroolTo";
 export default function Home() {
   const itemHeaderClick = (item: any) => {
     scrollTo(item);
-};
+  };
   return (
     <main className="mx-auto">
       <div className="mx-auto max-w-7xl h-screen">
@@ -28,8 +28,10 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div>
-        <Resumo />
+      <div className="w-full mx-0 py-10 bg-gray-900" id="sobre">
+        <div className="max-w-7xl mx-auto h-screen flex justify-center">
+          <Resumo />
+        </div>
       </div>
       <Projects />
     </main>
