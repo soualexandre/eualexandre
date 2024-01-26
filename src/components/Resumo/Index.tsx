@@ -8,7 +8,7 @@ export default function Resumo() {
             <div className={`${styles.containerImage} max-w-2xl`}>
                 <Image src={Profile} alt="Imagem de perfil" width={500} height={500} className="max-w-2xl" />
             </div>
-            <div className="text-justify  sm:px-4 lg:px-4 md:px-4 text-white">
+            <div className="text-justify  px-4 sm:px-4 lg:px-4 md:px-4 text-white">
                 <h1 className={`${styles.title} text-3xl sm:text-5xl font-bold pb-4`}>Sobre mim</h1>
                 <p>
                     Desenvolvedor Python, PHP e JavaScript, com 2 anos de experiência.
