@@ -1,12 +1,13 @@
 .borderBottom {
     position: relative;
+    cursor: pointer;
 }
 
 .borderBottom::after {
     content: "";
     position: absolute;
     bottom: 0;
-    top: 25px;
+    top: 35px;
     left: 0;
     width: 0;
     height: 4px;

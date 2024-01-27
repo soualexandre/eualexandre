@@ -35,7 +35,9 @@ export default function Home() {
           <Resumo />
         </div>
       </div>
-      <Projects />
+      <div className="bg-gray-700" id="projects">
+        <Projects />
+      </div>
     </main>
   );
 }

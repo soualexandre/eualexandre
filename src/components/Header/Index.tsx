@@ -18,11 +18,10 @@ export default function Header() {
                 <a onClick={() => itemHeaderClick("sobre")} className={`${styles.borderBottom} cursor-pointer`}>
                     Sobre mim
                 </a>
-                <div className={`${styles.borderBottom}`}>
+                <a onClick={() => itemHeaderClick("projects")} className={`${styles.borderBottom}`}>
                     Projetos
-                </div>
+                </a>
             </div>
-
             <div>
                 <div className="p-4 rounded-full bg-white"></div>
             </div>
