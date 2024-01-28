@@ -12,13 +12,13 @@ export default function Resumo() {
 
 
     const animateVariants: Variants = {
-        hidden: { y: -20, opacity: 0 },
-        visible: { y: 0, opacity: 1 },
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
     };
 
     const transition: Transition = {
         ease: 'easeInOut',
-        duration: 2,
+        duration: 1.5,
     };
 
     return (
