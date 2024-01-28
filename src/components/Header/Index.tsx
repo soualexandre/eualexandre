@@ -9,10 +9,8 @@ const Header: React.FC = () => {
     scrollTo(item);
   };
 
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
+  const [ref, inView] = useInView(); 
+  
   const animateVariants: Variants = {
     hidden: { y: -20, opacity: 0 },
     visible: { y: 0, opacity: 1 },
