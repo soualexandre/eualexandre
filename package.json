@@ -11,13 +11,16 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.1.0",
     "@types/react-scroll": "^1.8.10",
-    "framer-motion": "^10.18.0",
+    "framer-motion": "^11.0.3",
     "link": "^2.1.0",
     "next": "^14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "react-intersection-observer": "^9.5.3",
+    "react-redux": "^9.1.0",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {

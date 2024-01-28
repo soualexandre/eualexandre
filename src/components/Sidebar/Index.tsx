@@ -3,13 +3,12 @@ import Gmail from "@/assets/icons/Gmail";
 import Linkedin from "@/assets/icons/Linkedin";
 import Image from 'next/image';
 import LinkedinBlack from "@/assets/icons/LinkedinBlack";
-// import Github from "@/assets/icons/github";
 import Github from "@/assets/icons/github-mark-white.png"
 import Link from "next/link";
 
 export default function Sidebar() {
     return (
-        <div className="flex flex-col hidden md:flex justify-center items-center pt-40 gap-6">
+        <div className="flex flex-col md:flex justify-center items-center pt-40 gap-6">
             <Link href="https://github.com/soualexandre" target="_blank" className="icon-container transform transition-transform hover:scale-150">
                 <Image className="icon" src={Github} width={20} height={20} alt="github logo" />
             </Link>
