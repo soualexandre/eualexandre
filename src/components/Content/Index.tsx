@@ -2,14 +2,33 @@ import Image from "next/image";
 import Profile from "@/assets/icons/alexandre.jpeg"
 import styles from './profile.module.css';
 import ToolBar from "../ToolBar/ToolBar";
+import { useInView } from 'react-intersection-observer';
+import { Transition, Variants, motion } from "framer-motion";
 
 export default function Content() {
+    const [ref, inView] = useInView();
+
+    const animateVariants: Variants = {
+        hidden: { y: -20, opacity: 0 },
+        visible: { y: 0, opacity: 1 },
+    };
+
+    const transition: Transition = {
+        ease: 'easeInOut',
+        duration: 0.5,
+    };
     return (
         <>
-            <div className="flex flex-col sm:flex-row my-2 md:my-2 lg:my-0">
+            <motion.div
+                ref={ref}
+                initial="hidden"
+                animate={inView ? 'visible' : 'hidden'}
+                variants={animateVariants}
+                transition={transition}
+                className="flex flex-col sm:flex-row my-2 md:my-2 lg:my-0">
                 <div className="flex justify-center items-center sm:hidden ">
                     <div className={`${styles.guitarPick}`}>
-                    <div className={`${styles.photoContainer} relative bg-gray-100`} >
+                        <div className={`${styles.photoContainer} relative bg-gray-100`} >
                             <Image src={Profile} width={200} height={200} alt="Profile" className={`${styles.photoContainer} transition-transform transform-gpu hover:-translate-x-3 hover:-translate-y-2`} />
                         </div>
                     </div>
@@ -29,7 +48,7 @@ export default function Content() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 }
