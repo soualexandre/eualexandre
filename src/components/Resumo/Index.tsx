@@ -3,9 +3,33 @@ import Profile from '@/assets/icons/alexandre.jpeg'
 import styles from './resumo.module.css';
 import myPhotoGray from '@/assets/images/alexandre_cinza.jpg'
 import myPhotoBlue from '@/assets/images/alexandre_azul.jpg'
+import { useInView } from 'react-intersection-observer';
+import { Transition, Variants, motion } from "framer-motion";
+
 export default function Resumo() {
+
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+    });
+
+    const animateVariants: Variants = {
+        hidden: { y: -20, opacity: 0 },
+        visible: { y: 0, opacity: 1 },
+    };
+
+    const transition: Transition = {
+        ease: 'easeInOut',
+        duration: 2,
+    };
+
     return (
-        <div>
+        <motion.div
+            ref={ref}
+            initial="hidden"
+            animate={inView ? 'visible' : 'hidden'}
+            variants={animateVariants}
+            transition={transition}
+        >
             <div className="flex justify-center text-1xl py -4 ">
                 <h1 className="text-white text-3cl mx-auto font-medium">Sobre mim</h1>
             </div>
@@ -45,6 +69,6 @@ export default function Resumo() {
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     );
 }
