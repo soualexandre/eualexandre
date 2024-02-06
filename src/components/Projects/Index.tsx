@@ -5,19 +5,24 @@ import Image from "next/image"
 export default function Projects() {
     const dataProjects = [
         {
-            "project_name": "Eproc"
+            "project_name": "Eproc",
+            "image": "/projects/eproc.png" 
         },
         {
-            "project_name": "Bazza Carga"
+            "project_name": "Bazza Carga - Cliente",
+            "image": "/projects/eproc.png" 
         },
         {
-            "project_name": "Tapetes São Carlos B2B"
+            "project_name": "Bazza Carga - Motorista",
+            "image": "/projects/eproc.png" 
         },
         {
-            "project_name": "Tapetes São Carlos B2B"
+            "project_name": "Tapetes São Carlos B2B",
+            "image": "/projects/eproc.png" 
         },
         {
-            "project_name": "Tapetes São Carlos B2B"
+            "project_name": "Tapetes São Carlos B2B",
+            "image": "/projects/eproc.png" 
         }
 
     ]
@@ -34,7 +39,7 @@ export default function Projects() {
                                 <h1>{project.project_name}</h1>
                             </div>
                             <div className="px-6 py-4">
-                                <Image src={Eproc} alt="Sistema Eproc" />
+                                <Image src={project.image} alt="Sistema Eproc" />
                             </div>
                         </div>
                         <div className="px-6 pt-4 pb-2 text-center bg-gray-600">
